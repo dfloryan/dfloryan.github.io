@@ -223,6 +223,22 @@ width: 100%;
   backface-visibility: hidden;
 }
 span { color: #33b988; }
+
+.poligon {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #5b6d92;
+  -webkit-clip-path: circle(50%);
+  clip-path: circle(50%);
+}
+.poligon img {
+  position: absolute;
+  width: 100%; /* container height - (border thickness * 2) */
+  height: auto; /* container height - (border thickness * 2) */
+  -webkit-clip-path: circle(48.5%);
+  clip-path: circle(48.5%);
+}
 </style>
           
           
@@ -238,7 +254,10 @@ span { color: #33b988; }
         
           <ul class="flex fixedSpaces">
             <li class="col-3-12 col-tablet-1-4 col-phablet-1-2">
-              <img src="assets/img/dfloryan2.png" alt="Avatar" class="image" style="width:100%"><br>
+              <div class="poligon">
+                <img src="assets/img/dfloryan2.png">
+              </div>
+              <br>
             </li>
             <li class="col-9-12 col-tablet-3-4 col-phablet-1-2">
               <p><b>Daniel Floryan</b><br>
@@ -250,7 +269,10 @@ span { color: #33b988; }
             </li>
 
             <li class="col-3-12 col-tablet-1-4 col-phablet-1-2">
-              <img src="assets/img/arehman.png" alt="Avatar" class="image" style="width:100%"><br>
+              <div class="poligon">
+                <img src="assets/img/arehman.png">
+              </div>
+              <br>
             </li>
             <li class="col-9-12 col-tablet-3-4 col-phablet-1-2">
               <p><b>Abdur Rehman</b><br>
