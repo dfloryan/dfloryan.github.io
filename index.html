@@ -30,6 +30,15 @@
     <style>
         .slides { font-family: 'Inter', sans-serif; }
         .slides { font-family: 'Source Sans Pro', sans-serif; }
+        video#bgvid {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
     </style>
     
     <!-- Favicon -->
@@ -171,6 +180,9 @@
 <!-- Slide 1 (#03) -->
 <section class="slide whiteSlide kenBurns">
   <div class="content">
+    <video autoplay muted loop playsinline id="bgvid">
+      <source src="assets/img/background/animation.mp4" type="video/mp4">
+    </video>
     <div class="container">
       <div class="wrap bottom">
       
@@ -181,7 +193,6 @@
       </div>
     </div>
   </div>
-  <div class="background" style="background-image:url(assets/img/background/animation.gif)"></div>
 </section>
 
 <!-- Slide 1 (#10) -->
